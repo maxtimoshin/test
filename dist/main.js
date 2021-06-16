@@ -1,2 +1,2 @@
-const signIn=document.querySelector(".sign-in");signIn.addEventListener("click",(()=>{signIn.innerText="Hi, Angels!"}));
+const signIn=document.querySelector(".sign-in"),basketAmount=document.querySelector(".header__amount"),inputs=document.querySelectorAll(".input"),header=document.querySelector(".header");signIn.addEventListener("click",(()=>{signIn.innerText="Hi, Angels!",basketAmount.style.display="flex",header.style.background="url(./img/header-bg-login.png) center top no-repeat",header.style.maxWidth="1440px"})),inputs.forEach((e=>{e.addEventListener("focusin",(()=>{e.value=" "})),e.addEventListener("focusout",(()=>{e.value=e.placeholder}))}));
 //# sourceMappingURL=main.js.map

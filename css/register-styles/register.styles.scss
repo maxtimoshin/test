@@ -12,6 +12,8 @@
         letter-spacing: 0.87px;
         color: #000;
         margin-bottom: 14px;
+        padding: 0 15px;
+        text-align: center;
     }
     &__form {
         display: flex;
@@ -54,14 +56,22 @@
         text-transform: uppercase;
     }
     &__button:hover {
-        border:1px solid #000;
-        background-color:#F5D5BE;
-        color:#000;
-        transition: 0.5s ease-in;
+        border: 1px solid #000;
+        background-color: #f5d5be;
+        color: #000;
+        transition: 0.2s ease-in;
     }
 }
 
 @media (max-width: 530px) {
+    .register {
+        &__form {
+            width: 250px;
+            display: flex;
+            align-self: center;
+            align-content: center;
+        }
+    }
 }
 @media (max-width: 955px) {
 }

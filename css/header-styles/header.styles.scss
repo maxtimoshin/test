@@ -2,8 +2,8 @@
     height: 24px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    width:100%;
+    justify-content: space-between;
+    width: 100%;
     & div {
         width: 90px;
     }
@@ -29,9 +29,9 @@
 }
 
 .header {
-    background: url('https://raw.githubusercontent.com/maxtimoshin/test/master/img/header-bg.png') center center no-repeat fixed;
+    background: url("https://raw.githubusercontent.com/maxtimoshin/test/master/img/header-bg.png") top center no-repeat;
     display: flex;
-    width:100%;
+    width: 100%;
     background-size: cover;
     flex-direction: column;
     height: 500px;
@@ -42,6 +42,10 @@
         padding: 0 24px;
         height: 164px;
         background: linear-gradient(rgba(51, 51, 51, 0.2), rgba(0, 0, 0, 0.0001));
+    }
+
+    &__burger {
+        display: hidden;
     }
 
     &__logo {
@@ -56,6 +60,7 @@
     }
 
     &__nav {
+        display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
@@ -95,7 +100,7 @@
         display: block;
         width: 17px;
         height: 17px;
-        right: 16px;
+        right: 25px;
         top: 40px;
     }
 
@@ -114,6 +119,7 @@
     }
 
     &__nav-item {
+        text-align: center;
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
@@ -126,10 +132,13 @@
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
     }
 
+    &__nav-item:hover {
+        border-bottom: 2px solid #fff;
+    }
+
     &__log-in-out {
         justify-content: space-between;
         align-items: center;
-        width:130px;
         height: 24px;
         margin-top: 24px;
         display: flex;
@@ -143,11 +152,27 @@
             color: #fff;
             text-decoration: none;
         }
+        & a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
         & img {
             width: 17px;
             height: 24px;
             margin-left: 17px;
         }
+    }
+
+    &__amount {
+        margin: 0 0 3px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        color: #000;
+        border-radius: 50%;
+        background-color: #f2da91;
     }
 
     &__title {
@@ -172,6 +197,10 @@
         &__nav-menu {
             display: none;
         }
+
+        &__nav-item {
+            display: inline;
+        }
         &__logo {
             margin: 0 auto;
         }
@@ -193,6 +222,10 @@
             width: 200px;
         }
 
+        &__search-icon {
+            right: 10px;
+        }
+
         &__nav {
             max-width: 300px;
         }
@@ -203,11 +236,10 @@
         &__nav-list {
             width: 300px;
             flex-direction: column;
-            
         }
 
         &__nav-item {
-            width:200px;
+            width: 200px;
             margin-bottom: 10px;
         }
     }
