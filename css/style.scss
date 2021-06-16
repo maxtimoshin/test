@@ -9,6 +9,10 @@ body {
     align-items: center;
 }
 
+body.lock {
+    overflow:hidden;
+}
+
 @import "./header-styles/header.styles.scss";
 @import "./register-styles/register.styles.scss";
 @import "./footer-styles/footer.styles.scss";
