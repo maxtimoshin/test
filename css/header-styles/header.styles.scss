@@ -223,8 +223,8 @@
             position: absolute;
             height: 15%;
             width: 100%;
-            transition: all 0.3s easy-in;
-            background-color: #fff;
+            background-color:#fff;
+            transition:0.3s;
         }
         &__menu-icon::before,
         &__menu-icon::after {
@@ -247,11 +247,11 @@
             transform: scale(0) translate(0px, -50%);
         }
         &__menu-icon.active::before{
-            top:50%;
+            top:60%;
             transform: rotate(-45deg) translate(0px, -50%);
         }
         &__menu-icon.active::after{
-            bottom:50%;
+            bottom:40%;
             transform: rotate(45deg) translate(0px, 50%);
         }
         &__menu-body {
